@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint","simple-import-sort"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    // "project": ["./tsconfig.eslint.json", "./jest.config.ts"]
+    "project": "./tsconfig.eslint.json"
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "simple-import-sort/imports": "error"
+  }
+}
